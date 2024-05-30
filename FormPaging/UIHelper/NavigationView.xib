@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationView" customModule="FormPaging" customModuleProvider="target">
+            <connections>
+                <outlet property="btnProfile" destination="sFy-HT-b27" id="eTz-5H-5Sl"/>
+                <outlet property="btnSideMenu" destination="gRn-lv-K7o" id="TSn-tl-gze"/>
+                <outlet property="imgLeft" destination="mFU-qm-dWL" id="hZJ-MC-2ci"/>
+                <outlet property="imgRight" destination="MR4-hv-zrh" id="l7z-HF-9le"/>
+                <outlet property="vwContent" destination="iN0-l3-epB" id="LY7-cd-CCG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamburger" translatesAutoresizingMaskIntoConstraints="NO" id="mFU-qm-dWL">
+                    <rect key="frame" x="10" y="2.6666666666666679" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="4z4-D4-ALc"/>
+                        <constraint firstAttribute="height" constant="35" id="qyx-sG-yWh"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFy-HT-b27">
+                    <rect key="frame" x="10" y="2.6666666666666679" width="35" height="35"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="document" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-iy-8gx">
+                    <rect key="frame" x="156.66666666666666" y="0.0" width="80" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="68j-RG-pNF"/>
+                        <constraint firstAttribute="width" constant="80" id="xy2-VX-HqY"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MR4-hv-zrh">
+                    <rect key="frame" x="338" y="2.6666666666666679" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="gOJ-wv-vnN"/>
+                        <constraint firstAttribute="width" constant="35" id="uhx-Ps-JlK"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRn-lv-K7o">
+                    <rect key="frame" x="338" y="2.6666666666666679" width="35" height="35"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="sFy-HT-b27" firstAttribute="bottom" secondItem="mFU-qm-dWL" secondAttribute="bottom" id="04m-SU-GgF"/>
+                <constraint firstItem="sFy-HT-b27" firstAttribute="top" secondItem="mFU-qm-dWL" secondAttribute="top" id="0ay-JC-d6c"/>
+                <constraint firstItem="mFU-qm-dWL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Lki-a7-iqH"/>
+                <constraint firstItem="gRn-lv-K7o" firstAttribute="bottom" secondItem="MR4-hv-zrh" secondAttribute="bottom" id="MCx-lp-O7n"/>
+                <constraint firstItem="MR4-hv-zrh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Nkj-2B-yVt"/>
+                <constraint firstItem="mFU-qm-dWL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Vgb-CL-Mal"/>
+                <constraint firstItem="fbx-iy-8gx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WtB-mW-MkB"/>
+                <constraint firstItem="sFy-HT-b27" firstAttribute="trailing" secondItem="mFU-qm-dWL" secondAttribute="trailing" id="Wzj-CW-XKs"/>
+                <constraint firstItem="gRn-lv-K7o" firstAttribute="trailing" secondItem="MR4-hv-zrh" secondAttribute="trailing" id="f4s-BQ-veb"/>
+                <constraint firstAttribute="trailing" secondItem="MR4-hv-zrh" secondAttribute="trailing" constant="20" id="g3e-Nj-GP4"/>
+                <constraint firstItem="sFy-HT-b27" firstAttribute="leading" secondItem="mFU-qm-dWL" secondAttribute="leading" id="msM-Oc-FYJ"/>
+                <constraint firstItem="gRn-lv-K7o" firstAttribute="leading" secondItem="MR4-hv-zrh" secondAttribute="leading" id="nzT-Zg-z8p"/>
+                <constraint firstItem="gRn-lv-K7o" firstAttribute="top" secondItem="MR4-hv-zrh" secondAttribute="top" id="vJA-xt-4EP"/>
+                <constraint firstItem="fbx-iy-8gx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="whU-tQ-6Re"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="55.725190839694655" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="document" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="hamburger" width="128" height="128"/>
+    </resources>
+</document>
